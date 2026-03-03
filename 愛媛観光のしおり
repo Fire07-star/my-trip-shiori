@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛媛1泊2日 旅のしおり</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-orange {
+            background: linear-gradient(135deg, #fb923c, #f97316);
+        }
+        .gradient-blue {
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+        }
+        .tab-active {
+            border-bottom: 3px solid #f97316;
+            color: #f97316;
+        }
+        .price-tag {
+            font-size: 0.75rem;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="pb-10">
+
+    <!-- Header -->
+    <header class="gradient-orange text-white py-8 px-4 text-center shadow-lg">
+        <h1 class="text-2xl font-bold mb-2">🍊 愛媛 1泊2日 旅のしおり</h1>
+        <p class="text-sm opacity-90">道後の湯と下灘の絶景を巡る癒やしの旅</p>
+    </header>
+
+    <main class="max-w-md mx-auto mt-6 px-4">
+        
+        <!-- Tab Navigation -->
+        <div class="flex bg-white rounded-t-xl shadow-sm border-b">
+            <button onclick="showDay(1)" id="tab1" class="flex-1 py-4 font-bold tab-active">Day 1</button>
+            <button onclick="showDay(2)" id="tab2" class="flex-1 py-4 font-bold text-gray-400">Day 2</button>
+        </div>
+
+        <!-- Day 1 Content -->
+        <div id="day1" class="space-y-4 py-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">13:16</span>
+                    <h3 class="font-bold">松山駅 到着</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">路面電車で道後へ移動。</p>
+                    <span class="price-tag">¥200</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">14:00</span>
+                    <h3 class="font-bold">昼食：丸水 道後店</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">「宇和島鯛めし」を堪能。</p>
+                    <span class="price-tag">約 ¥2,500</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">15:30</span>
+                    <h3 class="font-bold text-green-700">どんぐり共和国</h3>
+                </div>
+                <p class="text-sm text-gray-600">ハイカラ通りにあるジブリショップ。</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">16:00</span>
+                    <h3 class="font-bold text-orange-700">愛媛の食卓</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">愛媛の「美味しい」が集まるセレクトショップ。</p>
+                    <span class="price-tag">予算次第</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">16:45</span>
+                    <h3 class="font-bold">道後ミルクチーズケエキ</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">話題のボトルスイーツで一休み。</p>
+                    <span class="price-tag">約 ¥500</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">17:15</span>
+                    <h3 class="font-bold">道後温泉本館 散策</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">外観鑑賞や足湯、入浴など。</p>
+                    <span class="price-tag">¥700〜</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-600 bg-orange-50">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-orange-600 bg-white px-2 py-1 rounded">20:00</span>
+                    <h3 class="font-bold text-orange-800">東道後のそらともり</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-700 font-bold">宿泊。最高のサウナと温泉へ！</p>
+                    <span class="price-tag">約 ¥15,000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 Content -->
+        <div id="day2" class="hidden space-y-4 py-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-sky-600 bg-sky-50 px-2 py-1 rounded">09:30</span>
+                    <h3 class="font-bold">スタバ 道後温泉駅舎店</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">明治の洋館で朝のコーヒータイム。</p>
+                    <span class="price-tag">約 ¥600</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-sky-600 bg-sky-50 px-2 py-1 rounded">11:00</span>
+                    <h3 class="font-bold">レンタカー利用</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">松山市内で手続き。ドライブ開始。</p>
+                    <span class="price-tag">¥4,000〜</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-sky-600 bg-sky-50 px-2 py-1 rounded">11:30</span>
+                    <h3 class="font-bold">昼食：ことり</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-600">松山のソウルフード「鍋焼うどん」。</p>
+                    <span class="price-tag">¥700</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-sky-600 bg-sky-50 px-2 py-1 rounded">14:30</span>
+                    <h3 class="font-bold">下灘駅 到着</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-700">日本屈指の絶景駅。珈琲と共に。</p>
+                    <span class="price-tag">¥500</span>
+                </div>
+            </div>
+
+            <div class="bg-sky-50 p-4 rounded-xl shadow-md border-l-4 border-sky-600">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-sm font-bold text-sky-600 bg-white px-2 py-1 rounded">16:30</span>
+                    <h3 class="font-bold text-sky-900">道の駅ふたみ</h3>
+                </div>
+                <div class="flex justify-between items-start">
+                    <p class="text-sm text-gray-700">ふたみシーサイド公園で休憩。じゃこ天が人気！</p>
+                    <span class="price-tag">約 ¥500</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400 text-center py-6 mt-4">
+                <p class="text-sm text-gray-500 italic">18:30 松山駅 出発</p>
+            </div>
+        </div>
+
+        <!-- Compact Checklist Section -->
+        <div class="mt-8 space-y-6">
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border">
+                <div class="bg-gray-800 text-white px-4 py-3 flex items-center gap-2">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3 class="font-bold text-sm">持ち物チェック（厳選）</h3>
+                </div>
+                <div class="p-4 grid grid-cols-2 gap-y-3 gap-x-4">
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 免許証
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 充電器
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 現金
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 温泉タオル
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 保険証
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300"> 常備薬
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 text-xs">
+                <h4 class="font-bold text-blue-800 mb-1 italic">Travel Tips</h4>
+                <ul class="list-disc list-inside text-blue-700 space-y-1">
+                    <li>予算は1人あたりの目安です。</li>
+                    <li>下灘駅周辺はコンビニが少ないので注意。</li>
+                    <li>ふたみの夕日は「日本の夕陽百選」に選ばれています。</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function showDay(day) {
+            const d1 = document.getElementById('day1');
+            const d2 = document.getElementById('day2');
+            const t1 = document.getElementById('tab1');
+            const t2 = document.getElementById('tab2');
+
+            if (day === 1) {
+                d1.classList.remove('hidden');
+                d2.classList.add('hidden');
+                t1.classList.add('tab-active');
+                t1.classList.remove('text-gray-400');
+                t2.classList.remove('tab-active');
+                t2.classList.add('text-gray-400');
+            } else {
+                d1.classList.add('hidden');
+                d2.classList.remove('hidden');
+                t2.classList.add('tab-active');
+                t2.classList.remove('text-gray-400');
+                t1.classList.remove('tab-active');
+                t1.classList.add('text-gray-400');
+            }
+        }
+    </script>
+</body>
+</html>
